@@ -4,24 +4,29 @@
 
 | 項目 | 内容 |
 |---|---|
-| データセット | Hotel Booking Demand |
-| Kaggle | https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand （掲載者のアカウント識別子 `jessemostipak`。正式な表示名は未確認） |
-| 元の論文 | Nuno Antonio, Ana de Almeida, Luis Nunes, *Hotel booking demand datasets*, Data in Brief 22 (2019) 41–49. https://doi.org/10.1016/j.dib.2018.11.126 |
-| 論文の権利表示 | CC BY(論文の1ページ目の表示。https://creativecommons.org/licenses/by/4.0/) |
+| データ | 論文の補足データ:H1(Resort Hotel)、H2(City Hotel)。`mmc2.zip` に入っています |
+| 入手先 | 論文のオンライン版(出版社のページ)。補足データの直接URL:https://ars.els-cdn.com/content/image/1-s2.0-S2352340918315191-mmc2.zip(出版社のURLは変更されることがあります) |
+| 補足データ(`mmc2.zip`)のSHA-256 | `6db57d635b9edec05f1cf9616ba6473e864909e4fc34819fa21cff58d518ee6a`(著者が出版社の直接URLから取得したファイルで、書籍の制作で使ったZIPと一致を確認:2026年10月27日) |
+| 元の論文 | Antonio, N., Almeida, A., & Nunes, L. (2019). Hotel booking demand datasets. *Data in Brief*, 22, 41–49.(著者:Nuno Antonio、Ana de Almeida、Luis Nunes) https://doi.org/10.1016/j.dib.2018.11.126 |
+| 論文の著作権表示 | © 2018 The Authors. Published by Elsevier Inc. |
+| 論文の全文 | https://pmc.ncbi.nlm.nih.gov/articles/PMC6297060/ |
+| 論文の権利表示 | CC BY 4.0(論文の1ページ目の表示。https://creativecommons.org/licenses/by/4.0/) |
 
 ## 確認できていること・できていないこと
 
 | 区分 | 内容 |
 |---|---|
-| 確認済み | 論文の書誌情報とCC BY表示。Kaggleの掲載ページに、2026年10月25日時点で「Attribution 4.0 International(CC BY 4.0)」の表示があったこと。著者が取得したCSVのSHA-256が、書籍の基準版と一致したこと(著者の環境、2026年10月) |
-| **未解決** | Kaggleの利用規約にある「自己の内部的・個人的・非商用」利用に限る旨の条項と、データセットのCC BY 4.0表示との関係 |
-| **未確認** | 掲載者が元データの権利者から許諾を得ているか。論文の補足資料の実ファイルと権利表示。ホテル運営側の許可の範囲。Kaggle掲載版の行数・更新日 |
+| 確認済み | 論文の書誌情報とCC BY 4.0表示。出版社の直接URLから得た `mmc2.zip` が、書籍の制作で使ったZIPと同一(SHA-256一致。著者の測定)。補足データから作成したCSVが、書籍の基準版とSHA-256まで一致したこと(2026年10月27日。ChatGPTで作成した場合=ChatGPTのデータ分析環境で生成、制作時の実行の記録は一部のみ保存/Pythonで作成した場合=Linux・Python 3.13.16・pandas 3.0.5。macOS・Windowsは未検証) |
+| 判断(確認ではない) | 論文のCC BY 4.0表示と、出版社の一般的な説明(オープンアクセス論文の補足データは論文と同じライセンスに従う)から、補足データ(H1・H2)にもCC BY 4.0が適用されると判断しています |
+| **未確認** | 補足データ個別のライセンス表示(出版社のページでの補足資料ごとの表示)。ホテル運営側の許可の範囲(商用の利用を含むか)。関係者の間の権利の関係。出版社のページの将来の表示 |
+
+> ファイルが同じであること(SHA-256の一致)と、利用条件が確認できたことは、別のことです。
 
 ## 注意
 
-- **この資料は、データの利用・再配布が許されることを保証しません。** ご自身で、Kaggleのページと規約を確認してください。
+- **この資料は、データの利用・再配布が許されることを保証しません。** ご自身で、出版社のページで利用条件を確認してください。ChatGPTにアップロードする場合は、ご自身のデータ管理・プライバシー設定も確認してください。
 - **CSVは再配布しません。** このリポジトリにも含まれていません。読者の皆さんも、CSVを他の人に渡さないでください。
-- 結果を公開するときは、元の論文とKaggleのページを出典として明示してください。
-- このリポジトリのライセンスは、Kaggleのデータや論文の権利条件を変更するものではありません。
+- 結果を公開するときは、元の論文を出典として明示し、加工したことを示してください。Kaggleなどの再掲載版は、本書の取得先ではなく、その利用条件は別に適用されます。
+- このリポジトリのライセンスは、論文や補足データの権利条件を変更するものではありません。
 
 [README に戻る](../README.md)
